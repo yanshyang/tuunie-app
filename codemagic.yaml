@@ -7,8 +7,6 @@ workflows:
     max_build_duration: 60
     environment:
       flutter: stable
-      xcode: latest
-      cocoapods: default
       java: 17
     scripts:
       - name: Get Flutter packages
@@ -24,17 +22,10 @@ workflows:
             --no-tree-shake-icons
       - name: Copy APK to artifacts
         script: |
-          cp build/app/outputs/flutter-apk/app-release.apK tuunie-release.apk
+          cp build/app/outputs/flutter-apk/app-release.apk tuunie-release.apk
           ls -lh tuunie-release.apk
     artifacts:
       - tuunie-release.apk
-    publishing:
-      artifacts:
-        - name: Tuunie v0.2.5 Release APK
-          path: tuunie-release.apk
-      - name: Mapping file (for crash reports)
-        path: build/app/outputs/mapping/release/mapping.txt
-        glob: false
     cache:
       cache_paths:
         - $HOME/.gradle/caches
