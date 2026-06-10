@@ -1,6 +1,5 @@
 // 团团 Tuunie · 三语 i18n
 // 简中 / 繁中 / English
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class TuunieI18n {
