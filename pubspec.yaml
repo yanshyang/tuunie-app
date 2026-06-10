@@ -1,11 +1,10 @@
 name: tuunie
-description: 团团 - 一家人一个团 · Made with 🩷 by Terence Goh
+description: 团团 - 一家人一个团 · Developed with 🩷 by Terence Goh
 publish_to: 'none'
 version: 0.2.0+2
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
-  flutter: ">=3.16.0"
 
 dependencies:
   flutter:
@@ -15,21 +14,10 @@ dependencies:
   shared_preferences: ^2.2.2
   intl: ^0.19.0
   provider: ^6.1.1
-  cached_network_image: ^3.3.1
-  path_provider: ^2.1.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^3.0.1
 
 flutter:
   uses-material-design: true
-  assets:
-    - assets/
-
-# 暂不直接依赖 Agora/JPush SDK，避免首次构建失败
-# 后续集成时把下面 3 个加回 dependencies 即可：
-#   agora_rtc_engine: ^6.2.6
-#   jpush_flutter: ^3.1.5
-#   flutter_local_notifications: ^16.3.0
