@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import '../theme.dart';
 import '../i18n/i18n.dart';
+import '../services/api.dart';
 
 // ========== P2 家庭动态 ==========
 class FeedScreen extends StatelessWidget {
