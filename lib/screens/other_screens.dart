@@ -761,7 +761,7 @@ class GlobalScreen extends StatelessWidget {
       Container(
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(gradient: const LinearGradient(colors: [TuunieColors.mint, TuunieColors.sky]), borderRadius: BorderRadius.circular(24)),
-        child: const Column(children: [
+        child: Column(children: [
           Row(children: [
             Text('📥', style: TextStyle(fontSize: 36)),
             SizedBox(width: 12),
