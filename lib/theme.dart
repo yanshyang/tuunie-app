@@ -1,6 +1,5 @@
 // 团团 Tuunie 主题
 // 暖色粘土风 + 圆角 + 软阴影
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class TuunieColors {
@@ -62,5 +61,3 @@ BoxDecoration cardDeco({Color? bg}) => BoxDecoration(
   boxShadow: softShadow,
 );
 
-// 静默 kIsDebugCheck 引用以避免未使用警告
-const _ = kDebugMode;
