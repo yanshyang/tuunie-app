@@ -30,8 +30,8 @@ jobs:
       - name: Get dependencies
         run: flutter pub get
 
-      - name: Build APK (release)
-        run: flutter build apk --release --no-tree-shake-icons
+      - name: Build APK (release, arm only)
+        run: flutter build apk --release --no-tree-shake-icons --target-platform android-arm,android-arm64
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
